@@ -1,0 +1,46 @@
+#!/bin/bash
+clear
+
+function init (){
+    clear
+    echo '-> System Update & Upgrade'    
+    sleep 2
+    wait
+    echo ' '
+}
+
+init
+
+echo '+ Updating'
+echo ' '
+sudo apt update 
+wait
+echo ' '
+sleep 3
+
+init
+
+echo '+ Upgrading'
+echo ' '
+sudo apt update -y
+wait
+echo ' '
+sleep 3
+
+init
+
+echo '+ Clearing'
+echo ' '
+sudo apt autoremove -qq -y
+wait
+echo ' '
+sleep 3
+
+init
+
+echo 'Done!'
+echo ' '
+sleep 1
+
+exit 0
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+clear
+echo "  :Workspaces.Hotkeys:"
+echo " "
+echo "  Super+Shift+PageUp - Super+Shift+PageDown - Super+PageUp - Super+PageDown"
+
+
+exit 0
