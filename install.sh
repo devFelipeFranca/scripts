@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# IP
+# ip addr show
+
 sudo clear
 
 sudo apt update
@@ -19,7 +22,6 @@ php --version
 composer --version
 python3 --version
 ruby --version
-
 sleep 10
 
 sudo apt update && sudo apt upgrade -y
@@ -41,26 +43,22 @@ sleep 10
 
 # MySQL Workbench Community
 wget http://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community_8.0.21-1ubuntu20.04_amd64.deb -O mysql-workbench-community.deb
-sudo dpkg -i mysql-workbench-community.deb
-sudo apt -f install
+sudo apt -f install ./mysql-workbench-community.deb
 sleep 10
 
 # Mongodb Compass
 wget https://downloads.mongodb.com/compass/mongodb-compass_1.21.2_amd64.deb
-sudo dpkg -i mongodb-compass_1.21.2_amd64.deb
-sudo apt -f install
+sudo apt -f install ./mongodb-compass_1.21.2_amd64.deb
 sleep 10
 
 # dbeaver
 wget -c https://dbeaver.io/files/6.0.0/dbeaver-ce_6.0.0_amd64.deb
-sudo dpkg -i dbeaver-ce_6.0.0_amd64.deb
-sudo apt -f install
+sudo apt -f install ./dbeaver-ce_6.0.0_amd64.deb
 sleep 10
 
 # zoom
 wget https://zoom.us/client/latest/zoom_amd64.deb -O zoom.deb
-sudo dpkg -i zoom.deb
-sudo apt-get -f install
+sudo apt-get -f install ./zoom.deb
 sleep 10
 
 sudo apt update && sudo apt upgrade -y
@@ -70,6 +68,3 @@ sudo apt install -y vlc gimp
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y virtualbox virtualbox-ext-pack
 
-
-# IP
-# ip addr show
