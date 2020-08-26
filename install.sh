@@ -68,3 +68,16 @@ sudo apt install -y vlc gimp
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y virtualbox virtualbox-ext-pack
 
+sudo chmod +x cmd.backup 
+sudo chmod +x cmd.hotkeys
+sudo chmod +x cmd.killport
+sudo chmod +x cmd.node.newapp
+
+sudo cp cmd.backup /usr/local/bin/
+sudo cp cmd.hotkeys /usr/local/bin/
+sudo cp cmd.killport /usr/local/bin/
+sudo cp cmd.node.newapp /usr/local/bin/
+
+sudo cat .bashrc > ./home/$USER/.bashrc
+
+exit 0
