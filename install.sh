@@ -2,6 +2,7 @@
 
 # IP
 # ip addr show
+# ip a
 
 sudo clear
 
