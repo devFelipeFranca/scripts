@@ -36,6 +36,8 @@ sudo apt update
 sudo apt install -y code 
 sleep 10
 
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
+
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -y ./google-chrome-stable_current_amd64.deb
@@ -58,15 +60,17 @@ sleep 10
 
 # zoom
 wget https://zoom.us/client/latest/zoom_amd64.deb -O zoom.deb
-sudo apt-get -f install ./zoom.deb
+sudo apt -f install ./zoom.deb
 sleep 10
 
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 sudo apt install -y gnome-tweak-tool gnome-system-tools
-sudo apt install -y vlc gimp
+#sudo apt install -y vlc gimp
 
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 sudo apt install -y virtualbox virtualbox-ext-pack
+
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 
 sudo chmod +x cmd.backup 
 sudo chmod +x cmd.hotkeys
