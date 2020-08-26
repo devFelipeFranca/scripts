@@ -64,10 +64,12 @@ sudo apt-get -f install
 sleep 10
 
 sudo apt update && sudo apt upgrade -y
-
-sudo apt install -y virtualbox virtualbox-ext-pack
 sudo apt install -y gnome-tweak-tool gnome-system-tools
 sudo apt install -y vlc gimp
+
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y virtualbox virtualbox-ext-pack
+
 
 # IP
 # ip addr show
