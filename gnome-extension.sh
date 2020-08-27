@@ -19,10 +19,8 @@ xdg-open https://extensions.gnome.org/extension/600/launch-new-instance/
 xdg-open https://extensions.gnome.org/extension/18/native-window-placement/
 xdg-open https://extensions.gnome.org/extension/881/screenshot-window-sizer/
 xdg-open https://extensions.gnome.org/extension/1677/public-ip/
-xdg-open https://extensions.gnome.org/extension/1762/lan-ip-address/
 xdg-open https://extensions.gnome.org/extension/657/shelltile/
 xdg-open https://extensions.gnome.org/extension/906/sound-output-device-chooser/
-xdg-open https://extensions.gnome.org/extension/1301/ubuntu-appindicators/
 xdg-open https://extensions.gnome.org/extension/602/window-list/
-xdg-open https://extensions.gnome.org/extension/10/windownavigator/
 xdg-open https://extensions.gnome.org/extension/1485/workspace-matrix/
+xdg-open https://extensions.gnome.org/extension/307/dash-to-dock/
