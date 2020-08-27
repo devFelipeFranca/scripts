@@ -1,0 +1,28 @@
+#!/bin/bash
+
+clear
+
+function init() {
+    clear
+    echo '-> Kill by Port'
+    sleep 1
+    echo ' '
+}
+
+sudo clear
+init
+
+if [[ $# -eq 0 ]]; then
+    echo "Digite a porta!"
+    echo ' '
+    sleep 1
+    exit 1
+fi
+
+if [[ $# -eq 1 ]]; then
+    sleep 1
+    #sudo "kill -9 $(lsof -t -i:$1)"
+    lsof -n -i:$1 | grep LISTEN | awk '{ print $2 }' | uniq | xargs kill -9 2> /dev/null
+fi
+
+exit 0

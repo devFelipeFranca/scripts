@@ -1,0 +1,29 @@
+#!/bin/bash
+clear
+echo '-> Create NodeJs Application'
+sleep 1
+echo ' '
+
+if [[ $# -eq 0 ]]; then
+    echo "Digite o nome da aplicação!"
+    echo ' '
+    sleep 1
+    exit 1
+fi
+
+if [[ $# -eq 1 ]]; then
+    sleep 1
+    rm -rf ~/node/$1
+    wait
+    mkdir ~/node/$1
+    wait
+    touch ~/node/$1/index.js
+    wait
+    echo ' '
+    wait
+    cd ~/node/$1
+    npm init -y
+    exec bash
+fi
+
+exit 1
