@@ -75,6 +75,8 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f 
 
 sudo npm install -g jshint jslint nodemon yarn browser-sync 
 
-sudo cat .bashrc > /home/viviane/.bashrc
+sudo cat bashrc > /home/viviane/.bashrc
+
+mkdir /home/viviane/node
 
 exit 0
