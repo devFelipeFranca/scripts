@@ -77,11 +77,12 @@ sudo apt update
 sudo apt install -y handbrake-gtk handbrake-cli
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
-sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell gdebi filezilla kazam
+sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell gdebi filezilla kazam minder vlc
 
 # sudo apt install kdenlive
-# sudo apt install vlc gimp
+# sudo apt install gimp
 # sudo snap install skype --classic
+# sudo snap install vidcutter
 
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
