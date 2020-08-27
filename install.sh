@@ -65,7 +65,7 @@ sudo apt -f install ./zoom.deb
 sleep 10
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
-sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions
+sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell
 #sudo apt install -y vlc gimp
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
