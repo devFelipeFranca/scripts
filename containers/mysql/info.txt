@@ -1,0 +1,11 @@
+PHPMYADMIN : http://localhost:8080
+
+USERNAME: root
+PASSWORD: password
+
+MYSQL
+
+USERNAME: root
+PASSWORD: password
+
+START: docker-compose up -d

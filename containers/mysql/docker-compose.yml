@@ -1,0 +1,31 @@
+version: "3.7"
+services:
+  mysql-server-composer:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - mysql-compose-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - mysql-compose-network  
+   
+  phpmyadmin-composer:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mysql-server-composer
+      PMA_USER: root
+      PMA_PASSWORD: password
+    ports:
+      - "8080:80"
+    networks:
+      - mysql-compose-network  
+
+networks: 
+  mysql-compose-network:
+      driver: bridge
+
+volumes:
+  mysql-compose-data:            
+

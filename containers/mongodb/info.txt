@@ -1,0 +1,12 @@
+MONGO-EXPRESS : http://localhost:8081 
+
+USERNAME: user
+PASSWORD: password
+
+MONGODB
+
+USERNAME: root
+PASSWORD: password
+
+
+START: docker-compose up -d

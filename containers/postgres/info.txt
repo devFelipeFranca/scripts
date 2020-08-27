@@ -1,0 +1,13 @@
+PGADMIN4 : http://localhost:16543 
+
+HOSTNAME: postgres
+USERNAME: admin@admin
+PASSWORD: password
+
+POSTGRES
+
+USERNAME: postgres
+PASSWORD: password
+
+
+START: docker-compose up -d
