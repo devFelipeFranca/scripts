@@ -6,9 +6,11 @@
 
 sudo clear
 
-sudo apt update
+sudo apt update && sudo apt upgrade -y
+sudo apt dist-upgrade -y
 sudo apt full-upgrade -y
 sudo apt autoremove -y
+
 sudo apt install -y build-essential git wget curl tar gzip tasksel nano unrar p7zip-full p7zip-rar net-tools openssh-server stress-ng f2fs-tools htop lynx vim
 sudo apt install -y linux-headers-`uname -r` -y
 sudo apt install -y sqlite nodejs npm apt-transport-https python3-pip libssl-dev libffi-dev python3-dev python3-venv ruby-full 
@@ -41,27 +43,27 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f 
 
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y ./google-chrome-stable_current_amd64.deb
+sudo apt install -f -y ./google-chrome-stable_current_amd64.deb
 sleep 10
 
 # MySQL Workbench Community
 wget http://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community_8.0.21-1ubuntu20.04_amd64.deb -O mysql-workbench-community.deb
-sudo apt -f install ./mysql-workbench-community.deb
+sudo apt -f -y install ./mysql-workbench-community.deb
 sleep 10
 
 # Mongodb Compass
 wget https://downloads.mongodb.com/compass/mongodb-compass_1.21.2_amd64.deb
-sudo apt -f install ./mongodb-compass_1.21.2_amd64.deb
+sudo apt -f -y install ./mongodb-compass_1.21.2_amd64.deb
 sleep 10
 
 # dbeaver
 wget -c https://dbeaver.io/files/6.0.0/dbeaver-ce_6.0.0_amd64.deb
-sudo apt -f install ./dbeaver-ce_6.0.0_amd64.deb
+sudo apt -f -y install ./dbeaver-ce_6.0.0_amd64.deb
 sleep 10
 
 # zoom
 wget https://zoom.us/client/latest/zoom_amd64.deb -O zoom.deb
-sudo apt -f install ./zoom.deb
+sudo apt -f -y  install ./zoom.deb
 sleep 10
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
@@ -73,10 +75,10 @@ sudo apt install -y virtualbox virtualbox-ext-pack
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 
-sudo npm install -g jshint jslint nodemon yarn browser-sync prettier
-
 sudo cat bashrc > /home/viviane/.bashrc
 
 mkdir /home/viviane/node 
+
+# sudo npm install -g jshint jslint nodemon yarn browser-sync prettier
 
 exit 0
