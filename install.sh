@@ -28,7 +28,7 @@ ruby --version
 sleep 10
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y sqlitebrowser gparted tmux terminator ca-certificates software-properties-common
+sudo apt install -y sqlitebrowser gparted tmux terminator ca-certificates software-properties-common flatpak
 sleep 10
 
 # VSCode
@@ -76,11 +76,13 @@ sudo add-apt-repository ppa:stebbins/handbrake-releases
 sudo apt update
 sudo apt install -y handbrake-gtk handbrake-cli
 
-
-
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
-sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell
-#sudo apt install -y vlc gimp
+sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell gdebi filezilla kazam
+
+# sudo apt install kdenlive
+# sudo apt install vlc gimp
+# sudo snap install skype --classic
+
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 sudo apt install -y virtualbox virtualbox-ext-pack
