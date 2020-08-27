@@ -66,6 +66,13 @@ wget https://zoom.us/client/latest/zoom_amd64.deb -O zoom.deb
 sudo apt -f -y  install ./zoom.deb
 sleep 10
 
+# timeshift
+sudo add-apt-repository -y ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install timeshift
+
+
+
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell
 #sudo apt install -y vlc gimp
