@@ -73,10 +73,10 @@ sudo apt install -y virtualbox virtualbox-ext-pack
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 
-sudo npm install -g jshint jslint nodemon yarn browser-sync 
+sudo npm install -g jshint jslint nodemon yarn browser-sync prettier
 
 sudo cat bashrc > /home/viviane/.bashrc
 
-mkdir /home/viviane/node
+mkdir /home/viviane/node 
 
 exit 0
