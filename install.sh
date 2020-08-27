@@ -83,6 +83,6 @@ sudo cp cmd.hotkeys /usr/local/bin/
 sudo cp cmd.killport /usr/local/bin/
 sudo cp cmd.node.newapp /usr/local/bin/
 
-sudo cat .bashrc > ./home/$USER/.bashrc
+sudo cat .bashrc > /home/$USER/.bashrc
 
 exit 0
