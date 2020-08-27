@@ -1,3 +1,7 @@
+ #!/bin/bash
+ 
+sudo clear
+
 sudo chmod +x cmd.backup 
 sudo chmod +x cmd.hotkeys
 sudo chmod +x cmd.killport
