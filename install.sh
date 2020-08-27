@@ -73,6 +73,8 @@ sudo apt install -y virtualbox virtualbox-ext-pack
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 
+sudo npm install -g jshint jslint nodemon yarn browser-sync 
+
 sudo chmod +x cmd.backup 
 sudo chmod +x cmd.hotkeys
 sudo chmod +x cmd.killport
