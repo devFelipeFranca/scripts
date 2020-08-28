@@ -84,6 +84,11 @@ sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions c
 # sudo snap install skype --classic
 # sudo snap install vidcutter
 
+# Java + Eclipse
+# sudo snap install --classic eclipse
+# sudo apt install default-jre
+
+
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 sudo apt install -y virtualbox virtualbox-ext-pack
