@@ -101,14 +101,12 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-
 alias bashrc="code ~/.bashrc"
 alias mybin="cd /usr/local/bin"
 alias update="clear && printf '\n\n UPDATE! \n\n' && sudo apt-get update"
 alias upgrade="clear && printf '\n\n UPDATE! \n\n' && sudo apt-get upgrade"
 alias updateall="cmd.updateall"
-alias nodenew="cmd.node.new"
-#alias backup="cmd.backup"
+alias backup="cmd.backup"
 alias killport="cmd.killport"
 alias repo="cd /etc/apt/sources.list.d"
 alias app="cd ~/node && clear && printf '\n > Node Folder < \n\n ' && ls -tr"
@@ -118,6 +116,7 @@ alias nn="nautilus ."
 alias h="clear && cd && printf '\n > Home < \n\n' && ls -tr"
 alias c="clear && code ."
 alias hotkeys="cmd.hotkeys"
+alias listen="sudo lsof -i -P -n | grep LISTEN"
 
 # Welcome
 clear
