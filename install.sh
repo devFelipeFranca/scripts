@@ -41,9 +41,6 @@ sleep 10
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 
-# System Tools
-sudo apt install -y imwheel nmap ngrep tcpdump
-
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -f -y ./google-chrome-stable_current_amd64.deb
@@ -92,6 +89,8 @@ sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions c
 # sudo apt install default-jre
 # sudo apt install -y openjdk-11-jdk
 
+# System Tools
+sudo apt install -y imwheel nmap ngrep tcpdump netcat wireshark
 
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
@@ -99,9 +98,8 @@ sudo apt install -y virtualbox virtualbox-ext-pack
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 
-sudo cat bashrc > /home/viviane/.bashrc
-
-mkdir /home/viviane/node 
+# sudo cat bashrc > /home/viviane/.bashrc
+# mkdir /home/viviane/node 
 
 # sudo npm install -g jshint jslint nodemon yarn browser-sync prettier
 
