@@ -83,6 +83,7 @@ sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions c
 # sudo apt install gimp
 # sudo snap install skype --classic
 # sudo snap install vidcutter
+# sudo snap install akira --edge
 
 # Java + Eclipse
 # sudo snap install --classic eclipse
