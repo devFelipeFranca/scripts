@@ -42,7 +42,7 @@ sleep 10
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 
 # System Tools
-sudo apt install -y imwheel nmap ngrep
+sudo apt install -y imwheel nmap ngrep tcpdump
 
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
