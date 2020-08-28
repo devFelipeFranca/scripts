@@ -87,6 +87,7 @@ sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions c
 # Java + Eclipse
 # sudo snap install --classic eclipse
 # sudo apt install default-jre
+# sudo apt install -y openjdk-11-jdk
 
 
 
