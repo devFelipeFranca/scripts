@@ -77,7 +77,7 @@ sudo apt update
 sudo apt install -y handbrake-gtk handbrake-cli
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
-sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell gdebi filezilla kazam minder vlc
+sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell gdebi filezilla kazam minder vlc imwheel
 
 # sudo apt install kdenlive
 # sudo apt install gimp
