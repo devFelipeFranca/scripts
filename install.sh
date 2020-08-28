@@ -41,6 +41,9 @@ sleep 10
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
 
+# System Tools
+sudo apt install -y imwheel nmap ngrep
+
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -f -y ./google-chrome-stable_current_amd64.deb
@@ -77,7 +80,7 @@ sudo apt update
 sudo apt install -y handbrake-gtk handbrake-cli
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
-sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell gdebi filezilla kazam minder vlc imwheel nmap 
+sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell gdebi filezilla kazam minder vlc
 
 # sudo apt install kdenlive
 # sudo apt install gimp
