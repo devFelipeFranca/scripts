@@ -90,7 +90,7 @@ sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions c
 # sudo apt install -y openjdk-11-jdk
 
 # System Tools
-sudo apt install -y imwheel nmap ngrep tcpdump netcat wireshark
+sudo apt install -y imwheel nmap ngrep tcpdump netcat wireshark sqlmap inetutils-traceroute dirb zmap 
 
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
