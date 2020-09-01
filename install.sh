@@ -69,7 +69,7 @@ sleep 10
 # timeshift
 sudo add-apt-repository -y ppa:teejee2008/ppa
 sudo apt-get update
-sudo apt-get install -y imeshift
+sudo apt-get install -y timeshift
 
 # handbrake
 sudo add-apt-repository ppa:stebbins/handbrake-releases
