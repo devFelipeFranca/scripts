@@ -61,6 +61,12 @@ wget -c https://dbeaver.io/files/6.0.0/dbeaver-ce_6.0.0_amd64.deb
 sudo apt -f -y install ./dbeaver-ce_6.0.0_amd64.deb
 sleep 10
 
+# SQLectron
+wget -c https://github.com/sqlectron/sqlectron-gui/releases/download/v1.31.0/sqlectron_1.31.0_amd64.deb
+sudo apt -f -y install ./sqlectron_1.31.0_amd64.deb
+sleep 10
+
+
 # zoom
 wget https://zoom.us/client/latest/zoom_amd64.deb -O zoom.deb
 sudo apt -f -y  install ./zoom.deb
