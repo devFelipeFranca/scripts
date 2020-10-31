@@ -1,0 +1,39 @@
+{
+    "env": {
+        "es6": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "clear",
+                    "warn",
+                    "log",
+                    "error"
+                ]
+            }
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "local",
+                "ignoreRestSiblings": false
+            }
+        ],
+        "global-require": 0,
+        "func-names": [
+            "error",
+            "never"
+        ]
+    }
+}
