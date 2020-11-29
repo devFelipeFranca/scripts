@@ -1,0 +1,11 @@
+#!/bin/bash
+
+clear
+
+git clone https://github.com/vivianeflowt/node-enviroment.git
+wait
+rm -rf node-enviroment/.git
+wait
+mv -f node-enviroment/* .
+wait
+rm -rf node-enviroment
