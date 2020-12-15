@@ -135,3 +135,16 @@ npm install eslint eslint-config-google prettier jest --save-dev
 wait
 npm audit fix
 wait
+
+echo "
+/* eslint-disable */
+/* eslint-enable */
+" > index.js
+
+echo "
+/* eslint-disable */
+/* eslint-enable */
+" > debug.js
+
+
+
