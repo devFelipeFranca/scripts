@@ -19,6 +19,10 @@ rm -rf ./.stylelintignore 2>/dev/null
 wait
 rm -rf ./.eslintrc 2>/dev/null
 wait
+rm -rf ./jest.config.js 2>/dev/null
+wait
+#rm -rf ./test 2>/dev/null
+#wait
 sleep 1
 
 echo "atualizando o gitignore..."
@@ -79,6 +83,30 @@ temp
 " >./.prettierignore
 wait
 
+mkdir src
+wait
+mkdir tests
+wait
+touch debug.js
+wait
+touch index.js
+wait
+
+echo "
+test('adds 1 + 2 to equal 3', () => {
+  expect(1 + 2).toBe(3);
+});
+" >./tests/default.test.js
+
+echo "
+module.exports = {
+  clearMocks: true,
+  coverageDirectory: 'coverage',
+  coverageProvider: 'v8',
+  testEnvironment: 'node',
+};
+" >./jest.config.js
+
 echo '
 {
     "env": {
@@ -103,7 +131,7 @@ echo "instalando alguns pacotes..."
 echo ""
 npm init -y
 wait
-npm install eslint eslint-config-google prettier --save-dev
+npm install eslint eslint-config-google prettier jest --save-dev
 wait
 npm audit fix
 wait
