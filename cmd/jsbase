@@ -1,0 +1,109 @@
+#!/bin/sh
+
+clear
+
+echo "removendo coisas..."
+rm -f ./package.json 2>/dev/null
+wait
+rm -f ./package-lock.json 2>/dev/null
+wait
+rm -f ./.eslintignore 2>/dev/null
+wait
+rm -f ./.prettierignore 2>/dev/null
+wait
+rm -f ./.prettierrc 2>/dev/null
+wait
+rm -rf ./node_modules 2>/dev/null
+wait
+rm -rf ./.stylelintignore 2>/dev/null
+wait
+rm -rf ./.eslintrc 2>/dev/null
+wait
+sleep 1
+
+echo "atualizando o gitignore..."
+echo "node_modules
+.history
+tmp
+temp
+*.log
+*.temp
+*.tmp
+yarn.lock
+package-lock.json
+debug.js
+" >./.gitignore
+wait
+
+echo "adicionando eslintignore..."
+echo "node_modules
+package.json
+package-lock.json
+.stylelintignore
+.prettierrc
+.eslintrc
+.prettierignore
+.eslintignore
+*.gif
+*.png
+*.jpg
+*.jpeg
+.history
+tmp
+temp
+*.log
+*.temp
+*.tmp
+" >./.eslintignore
+wait
+
+echo "adicionando prettierignore..."
+echo "node_modules
+package.json
+package-lock.json
+.stylelintignore
+.prettierrc
+.eslintrc
+.prettierignore
+.eslintignore
+*.gif
+*.png
+*.jpg
+*.jpeg
+.history
+tmp
+temp
+*.log
+*.temp
+*.tmp
+" >./.prettierignore
+wait
+
+echo '
+{
+    "env": {
+        "node":true,
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": [
+        "google"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+    }
+}
+' >./.eslintrc
+wait
+
+echo "instalando alguns pacotes..."
+echo ""
+npm init -y
+wait
+npm install eslint eslint-config-google prettier --save-dev
+wait
+npm audit fix
+wait
