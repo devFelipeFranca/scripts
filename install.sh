@@ -28,7 +28,7 @@ ruby --version
 sleep 10
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y sqlitebrowser gparted tmux terminator ca-certificates software-properties-common flatpak
+sudo apt install -y sqlitebrowser gparted ca-certificates software-properties-common flatpak
 sleep 10
 
 # VSCode
@@ -83,7 +83,7 @@ sudo apt update
 sudo apt install -y handbrake-gtk handbrake-cli
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
-sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell gdebi filezilla kazam minder vlc
+sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions chrome-gnome-shell gdebi kazam vlc
 
 # sudo apt install kdenlive
 # sudo apt install gimp
@@ -111,6 +111,6 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f 
 # sudo cat bashrc > /home/viviane/.bashrc
 # mkdir /home/viviane/node 
 
-# sudo npm install -g jshint jslint nodemon yarn browser-sync prettier
+# sudo npm install -g jshint jslint nodemon yarn browser-sync prettier eslint gulp
 
 exit 0
