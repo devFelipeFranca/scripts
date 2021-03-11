@@ -11,7 +11,7 @@ sudo apt dist-upgrade -y
 sudo apt full-upgrade -y
 sudo apt autoremove -y
 
-sudo apt install -y build-essential git wget curl tar gzip tasksel nano unrar p7zip-full p7zip-rar net-tools openssh-server stress-ng f2fs-tools htop lynx vim
+sudo apt install -y build-essential git wget curl tar gzip tasksel nano net-tools openssh-server stress-ng htop lynx vim
 sudo apt install -y linux-headers-`uname -r` -y
 sudo apt install -y sqlite nodejs npm apt-transport-https python3-pip libssl-dev libffi-dev python3-dev python3-venv ruby-full 
 sudo apt install -y php libapache2-mod-php php-mbstring php-xmlrpc php-soap php-gd php-xml php-cli php-zip composer 
@@ -100,7 +100,7 @@ sudo apt install -y gnome-tweak-tool gnome-system-tools gnome-shell-extensions c
 # sudo apt install -y openjdk-11-jdk
 
 # System Tools
-sudo apt install -y imwheel nmap ngrep tcpdump netcat wireshark sqlmap inetutils-traceroute dirb zmap 
+sudo apt install -y nmap ngrep tcpdump netcat wireshark sqlmap inetutils-traceroute dirb zmap 
 
 
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt -f install 
